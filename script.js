@@ -1,4 +1,4 @@
-fetch(`http://makeup-api.herokuapp.com/api/v1/products.json`).then((data)=>{
+fetch(`http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline`).then((data)=>{
         console.log(data) //data get from api
         return data.json();
     }).then((getdata)=>{ // convert the data element1 to objectData
